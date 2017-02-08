@@ -24,7 +24,7 @@ namespace ProjectRename
 
         private string CreateNewPath(string path)
         {
-            return Regex.Replace(path, @"\kkkkk-[0-9xyp]{4}", this.project.ProjectCode);
+            return Regex.Replace(path, @"\\kkkkk-[0-9xyp]{4}", "\\" + project.ProjectCode);
         }
     }
 }
